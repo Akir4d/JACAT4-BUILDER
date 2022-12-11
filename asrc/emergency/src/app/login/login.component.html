@@ -1,10 +1,10 @@
 ﻿<div class="fixed w-full h-full {{messages.length?'bg-red-700':'bg-teal-900'}} top-0 left-0">
-  <div class="grid">
-    <div class="col-6 hidden md:flex">
+  <div class="grid lg:align-items-center">
+    <div class="col-6 hidden lg:flex">
       <img src="assets/emergency/loginhelper.png" alt="Image" class="md:mr-auto block md:h-full"
         style="max-height: 100vh;clip-path: polygon(0 0, 86% 0%, 100% 100%, 0 100%)">
     </div>
-    <div class="col-12 md:col-6 text-center pl-8 flex align-items-center">
+    <div class="col-12 lg:col-6 text-center pl-4 pr-4 lg:pl-8 lg:flex lg:align-items-center">
       <div clss="grid">
         <p-card header="AOP Emergency Console" subheader="Login with .env credentials" styleClass="mb-2 mt-2">
           <form [formGroup]="form" (ngSubmit)="onSubmit()">

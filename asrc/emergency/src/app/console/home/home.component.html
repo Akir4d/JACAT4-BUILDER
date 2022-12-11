@@ -1,5 +1,5 @@
 ﻿<div class="col-12 md:col-10 xl:col-10">
-    <p-card header="Configure Default Database">
+    <p-card header="Configure Default Database" >
         <form *ngIf="formDb" [formGroup]="formDb" (ngSubmit)="onSubmit()">
             <div class="grid">
                 <div *ngFor="let item of listFormKeys; let i=index" class="col-12 md:col-6 xl:col-4">
